@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Instagram</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:;
+}
+
+.login-container {
+    background: rgba(135, 33, 33, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    background-color:gray;
+    text-align: center;
+    width: 320px;
+
+    
+}
+
+.login-form h2 {
+    color: #fff;
+    margin-bottom: 20px;
+   
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: 5px;
+    font-size: 12px;
+    color: #ffcc00;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #ffcc00;
+    color: #333;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+   
+}
+
+button:hover {
+    background: #ffaa00;
+}
+
+.register-link {
+    margin-top: 15px;
+    color: #fff;
+    
+}
+
+.register-link a {
+    color: #ffcc00;
+    text-decoration: none;
+    
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+    
+}
+
+        
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form">
+            <h2>Welcome Back</h2>
+            <div class="input-group">
+                <input type="username" required>
+                <label>Username</label>
+            </div>
+            <div class="input-group">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <button type="submit">Login</button>
+            <p class="register-link">Don't have an account? <a href="#">Sign up</a></p>
+        </form>
+    </div>
+</body>
+</html>
